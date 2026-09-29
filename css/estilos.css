@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.hero {
+    background-color: #222;
+    color: white;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.tipo {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.tipo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tipo h2 {
+    color: #6f42c1;
+}
+
+.formulario {
+    max-width: 600px;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .tipo img {
+        height: 220px;
+    }
+}

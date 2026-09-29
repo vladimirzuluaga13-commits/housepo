@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">House Music</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="tipos.html">Tipos de House</a></li>
+                <li class="nav-item"><a class="nav-link" href="canciones.html">Registrar canción</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container py-5">
+    <h1>Iniciar sesión</h1>
+
+    <!-- Botón que abre el modal -->
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalLogin">
+        Iniciar sesión
+    </button>
+</section>
+
+<!-- Modal de inicio de sesión -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Iniciar sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="formulario" id="formLogin">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" class="form-control mb-3" placeholder="Usuario">
+
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" class="form-control mb-3" placeholder="Contraseña">
+                </form>
+            </div>
+
+            <div class="modal-footer justify-content-between">
+                <a href="registro.html" class="btn btn-outline-dark">Crear cuenta</a>
+                <button type="submit" form="formLogin" class="btn btn-dark">Ingresar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Vladimir Zuluaga Guíral - House Music</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
